@@ -52,12 +52,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-//    // Подготовка и выполнение SQL-запроса для обновления данных
-//    $sql = "UPDATE users SET login = '$newLogin', phone = '$newPhone', email = '$newEmail', password = '$newPassword' WHERE login = '$login'";
-//    if ($conn->query($sql) === FALSE) {
-//        $errors[] = "Error updating user data: " . $conn->error;
-//    } else{
-//        $formSubmitted = true;
-//    }
     $conn->close();
 }
